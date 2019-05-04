@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <!-- Font Style -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+    <!-- Cart Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css">
     <!-- Style Custom -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -28,14 +30,14 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html"><i class="fa fa-home"></i> BERANDA</a>
-                </li>
                 <li class="nav-item active">
+                    <a class="nav-link" href="index.html"><i class="fa fa-home"></i> BERANDA <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="cek-data.html"><i class="fa fa-user-check"></i> CEK DATA</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="cart.html"><i class="fa fa-chart-pie"></i> REAL COUNT</a>
+                    <a class="nav-link" href="#"><i class="fa fa-chart-pie"></i> REAL COUNT</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#"><i class="fa fa-chart-bar"></i> MENU 1</a>
@@ -60,53 +62,26 @@
             </ul>
         </div>
     </nav>
+    <!-- header -->
     <div class="jumbotron bg-white text-center pt-5 pb-2">
         <div class="image">
             <img src="https://kpumump.files.wordpress.com/2013/04/kpu-ump.jpg" width="120" height="120" class="img-fluid" alt="Logo Kpu Mahasiswa">
         </div>
-        <!-- <h3 class="bold typewriter">Gunakan Hak Pilihmu!</h3>
-        <hr class="m-y-md"> -->
+        <h3 class="bold typewriter pt-4">Real Count</h3>
+        <hr class="m-y-md">
         <!-- <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
         <p class="lead">
             <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
         </p> -->
     </div>
-    <!-- Form Cek -->
-    <div class="cek-data container-fluid">
-        <div class="row">
-            <div class="col-md-3"></div>
-            <div class="col">
-                <div class="card search">
-                    <div class="card-header text-center alert alert-info mb-0">
-                        <h5 class="mb-0 bold"><i class="fa fa-check"></i> Cek Data</h5>
-                    </div>
-                    <div class="card-body">
-                        <div class="form-group">
-                            <span class="label label-default bold">Nama :</span>
-                            <input type="text" class="form-control" name="" value="" placeholder="">
-                        </div>
-                        <div class="form-group">
-                            <span class="label label-default bold">NIM :</span>
-                            <input type="text" class="form-control" name="nim" value="" placeholder="">
-                        </div>
-                        <div class="form-group pt-5">
-                            <button class="btn btn-info text-white" id="btn-search"><i class="fa fa-search" id="search-span"></i> <i class="fa fa-spinner fa-spin d-none" id="loading-span"></i> Cari</button>
-
-                        </div>
-                    </div>
-                    <div class="card-footer alert alert-danger mb-0">
-                        <div class="message">
-                            <span><i class="fa fa-exclamation-triangle "></i> Belum Terdaftar</span>
-                        </div>
-                    </div>
-                    <div class="card-footer alert alert-warning mb-0">
-                        <div class="message">
-                            <span><i class="fa fa-check-circle "></i> Sudah Terdaftar</span>
-                        </div>
-                    </div>
+    <!-- Cart -->
+    <div class="cart">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 ml-auto mr-auto p-0">
+                    <canvas id="myChart" height="auto" width="auto"></canvas>
                 </div>
             </div>
-            <div class="col-md-3"></div>
         </div>
     </div>
     <!-- Footer -->
@@ -115,13 +90,14 @@
             <small class="bold text-muted">Powered By UTech</small>
         </div>
     </div>
-    
     <!-- Jquery  Javascript-->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <!-- Pooper Javascript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <!-- Bootstrap Javascript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- Cart Javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
     <!-- Script Javascript Custom -->
     <script src="script.js"></script>
 </body>
