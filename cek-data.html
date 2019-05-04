@@ -44,24 +44,24 @@
                     <a class="nav-link" href="#"><i class="fa fa-calendar-check"></i> MENU 2</a>
                 </li>
                 <!-- <li class="nav-item dropdown">
-	        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	          Dropdown
-	        </a>
-	        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-	          <a class="dropdown-item" href="#">Action</a>
-	          <a class="dropdown-item" href="#">Another action</a>
-	          <div class="dropdown-divider"></div>
-	          <a class="dropdown-item" href="#">Something else here</a>
-	        </div>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-	      </li> -->
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li> -->
             </ul>
         </div>
     </nav>
     <div class="jumbotron bg-white text-center pt-5 pb-2">
-        <div class="image">
+        <div class="image animated zoomIn">
             <img src="https://kpumump.files.wordpress.com/2013/04/kpu-ump.jpg" width="120" height="120" class="img-fluid" alt="Logo Kpu Mahasiswa">
         </div>
         <!-- <h3 class="bold typewriter">Gunakan Hak Pilihmu!</h3>
@@ -81,17 +81,20 @@
                         <h5 class="mb-0 bold"><i class="fa fa-check"></i> Cek Data</h5>
                     </div>
                     <div class="card-body">
-                        <div class="form-group">
-                            <span class="label label-default bold">Nama :</span>
-                            <input type="text" class="form-control" name="" value="" placeholder="">
+                        <div class="form-group input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1"><i class="fa fa-user"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Nama" aria-label="Nama" aria-describedby="basic-addon1">
                         </div>
-                        <div class="form-group">
-                            <span class="label label-default bold">NIM :</span>
-                            <input type="text" class="form-control" name="nim" value="" placeholder="">
+                        <div class="form-group input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon2"><i class="fa fa-address-book"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="NIM" aria-label="NIM" aria-describedby="basic-addon2">
                         </div>
                         <div class="form-group pt-5">
                             <button class="btn btn-info text-white" id="btn-search"><i class="fa fa-search" id="search-span"></i> <i class="fa fa-spinner fa-spin d-none" id="loading-span"></i> Cari</button>
-
                         </div>
                     </div>
                     <div class="card-footer alert alert-danger mb-0">
@@ -115,7 +118,6 @@
             <small class="bold text-muted">Powered By UTech</small>
         </div>
     </div>
-    
     <!-- Jquery  Javascript-->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <!-- Pooper Javascript -->

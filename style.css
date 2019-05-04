@@ -17,8 +17,14 @@ body {
 .bg-blue-dark {
 	background-color: #563D7C;
 }
+.text-blue-dark {
+	color: #563D7C;
+}
 .bold {
 	font-weight: 600;
+}
+.shadow-box-lg {
+	box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
 }
 
 /* Text Writting */

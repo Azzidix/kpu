@@ -64,7 +64,7 @@
     </nav>
     <!-- header -->
     <div class="jumbotron bg-white text-center pt-5 pb-2">
-        <div class="image">
+        <div class="image animated zoomIn">
             <img src="https://kpumump.files.wordpress.com/2013/04/kpu-ump.jpg" width="120" height="120" class="img-fluid" alt="Logo Kpu Mahasiswa">
         </div>
         <h3 class="bold typewriter pt-4">Real Count</h3>
@@ -84,6 +84,7 @@
             </div>
         </div>
     </div>
+
     <!-- Footer -->
     <div class="footer text-center pt-3 pb-3">
         <div class="container-fluid">
@@ -100,6 +101,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
     <!-- Script Javascript Custom -->
     <script src="script.js"></script>
+    <script>
+        var ctx = document.getElementById("myChart").getContext("2d");
+        window.myDoughnut = new Chart(ctx, config); {
+        }
+    </script>
 </body>
 
 </html>
