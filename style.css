@@ -42,6 +42,14 @@ body {
   from, to { border-color: transparent }
   50% { border-color: orange; }
 }
+.navbar-1 .nav-item {
+	margin-left: 20px;
+}
+@media screen and (max-width: 600px){
+	.navbar-1 .nav-item {
+		margin-left: 0;
+	}
+}
 
 /* Page Cek Data */
 .cek-data .form-control {

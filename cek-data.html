@@ -21,26 +21,26 @@
 
 <body class="display-5">
     <!-- Navbar 1 -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-blue-dark">
+    <nav class="navbar navbar-1 navbar-expand-lg navbar-dark bg-blue-dark">
         <a class="navbar-brand" href="#"><img src="https://azzidix.github.io/kpu/kpu-ump.png" width="35" height="35" alt="small logo kpu"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item ml-4">
+                <li class="nav-item">
                     <a class="nav-link" href="index.html"><i class="fa fa-home"></i> BERANDA</a>
                 </li>
-                <li class="nav-item active ml-4">
+                <li class="nav-item active">
                     <a class="nav-link" href="cek-data.html"><i class="fa fa-user-check"></i> CEK DATA</a>
                 </li>
-                <li class="nav-item ml-4">
+                <li class="nav-item">
                     <a class="nav-link" href="#"><i class="fa fa-chart-pie"></i> REAL COUNT</a>
                 </li>
-                <li class="nav-item ml-4">
+                <li class="nav-item">
                     <a class="nav-link" href="#"><i class="fa fa-chart-bar"></i> MENU 1</a>
                 </li>
-                <li class="nav-item ml-4">
+                <li class="nav-item">
                     <a class="nav-link" href="#"><i class="fa fa-calendar-check"></i> MENU 2</a>
                 </li>
                 <!-- <li class="nav-item dropdown">
@@ -87,20 +87,21 @@
                         </div>
                         <div class="form-group">
                             <span class="label label-default bold">NIM :</span>
-                            <input type="text" class="form-control" name="" value="" placeholder="">
+                            <input type="text" class="form-control" name="nim" value="" placeholder="">
                         </div>
                         <div class="form-group pt-5">
-                            <button class="btn btn-info text-white"><i class="fa fa-search"></i> Cari</button>
+                            <button class="btn btn-info text-white" id="btn-search"><i class="fa fa-search" id="search-span"></i> <i class="fa fa-spinner fa-spin d-none" id="loading-span"></i> Cari</button>
+
                         </div>
                     </div>
                     <div class="card-footer alert alert-danger mb-0">
                         <div class="message">
-                            <span><i class="fa fa-exclamation-triangle "></i> Data Belum Terdaftar</span>
+                            <span><i class="fa fa-exclamation-triangle "></i> Belum Terdaftar</span>
                         </div>
                     </div>
                     <div class="card-footer alert alert-warning mb-0">
                         <div class="message">
-                            <span><i class="fa fa-check-circle "></i> Data Sudah Terdaftar</span>
+                            <span><i class="fa fa-check-circle "></i> Sudah Terdaftar</span>
                         </div>
                     </div>
                 </div>
@@ -111,7 +112,7 @@
     <!-- Footer -->
     <div class="footer text-center pt-3 pb-3">
         <div class="container-fluid">
-            <small class="bold">Powered By UTech</small>
+            <small class="bold text-muted">Powered By UTech</small>
         </div>
     </div>
     
@@ -121,6 +122,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <!-- Bootstrap Javascript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- Script Javascript Custom -->
+    <script src="script.js"></script>
 </body>
 
 </html>
